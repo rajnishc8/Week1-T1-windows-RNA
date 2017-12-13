@@ -1,0 +1,39 @@
+Windows Instruction for getting "react-native App" to work and debug on win10 device.
+This app uses STACK, TAB and DRAWER navigation.
+---------------------------------------------------------------------------------------
+Prequsite:
+A.) Install Visual Studio 2017 community Edision from link below: 
+    https://www.visualstudio.com/downloads/
+    OR
+    https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15
+    And install all workflows.
+
+0.) npm -i -g react-native-cli -> one time only
+
+Note: Developing this "react-native app" for win10  of following six steps.
+1.) react-native init Week1_T1_windows_RNA_V1
+2.) cd Week1_T1_windows_RNA_V1
+      2a.) npm install --save react-navigation
+      2b.) npm install --save react-native-vector-icons  <- run this from admin command prompt. 
+      2c.) npm install
+      2d.) react-native link        <- do this after installing all npm packages.         
+3.) npm install --save-dev rnpm-plugin-windows
+4.) npm install react-native@0.50  <-- rnpm-plugin-windows(react-native-windows@0.50.0-rc.2) only works with react-native@0.50 at the moment. It may not be required later.
+5.) react-native windows
+6.) react-native run-windows
+7.) Your app should be running now on windows!
+     if you get "red screen" . just keep on pressing 'Reload Javascript" button until Metro builder start's.
+
+8.) Update app.windows.js to change code.
+9.) react-native run-windows
+
+Note on Requirements
+Note: Development on React Native Windows itself currently requires Visual Studio 2017.
+It is not supported with VS Code.
+
+Note On Expo
+React Native Windows is not currently supported by Expo.
+If you have a React Native project created by create-react-app on which you would like to develop React Native Windows, 
+you can eject your app from Expo.
+
+
