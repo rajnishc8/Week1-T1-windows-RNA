@@ -23,12 +23,12 @@ react-native run-windows
     2c.) npm install
     2d.) react-native link        <- do this after installing all npm packages.
 ```
-3.) npm install --save-dev rnpm-plugin-windows
-4.) npm install react-native@0.50  <-- rnpm-plugin-windows(react-native-windows@0.50.0-rc.2) only works with react-native@0.50 at the moment. It may not be required later.
-5.) react-native windows
-6.) react-native run-windows
-7.) Your app should be running now on windows!
+3. npm install --save-dev rnpm-plugin-windows
+4.  npm install react-native@0.50  <-- rnpm-plugin-windows(react-native-windows@0.50.0-rc.2) only works with react-native@0.50 at the moment. It may not be required later.
+5.  react-native windows
+6.  react-native run-windows
+7.  Your app should be running now on windows!
      if you get "red screen" . wait for Metro Bundler to start. just keep on pressing 'Reload Javascript" button until Metro builder start's.
 
-8.) Update app.windows.js to change code.
-9.) react-native run-windows
+8.  Update app.windows.js to change code.
+9.  react-native run-windows
